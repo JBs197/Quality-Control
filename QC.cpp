@@ -302,6 +302,7 @@ void fix_one(wstring file_path, wstring catalogue)
 	if (!CloseHandle(hfile1)) { err(L"CloseHandle2-fix_one"); }
 }
 
+// Coordinating function for applying fixes.
 void fix(wstring& year, vector<wstring>& catalogues)
 {
 	// Let's assume, for all years, that currency is always Canadian dollars $ (CAD). 
